@@ -25,7 +25,7 @@ Idiotek.prototype.mixin({
           fs.stat( req_path, function( err, stats ) {
             if ( stats.isDirectory() ) {
               response.writeHead( 200, { "Content-Type": "text/plain"} );
-              response.end("DIR2");
+              aresponse.end("DIR2");
             } else {
               response.writeHead( 200, { "Content-Type": "text/plain"} );
               response.end("FILE");
